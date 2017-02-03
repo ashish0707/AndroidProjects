@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.demo.zappo.viewmodel.ProductDetailViewModel"/>
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:background="@drawable/black_border"
+        android:layout_width="match_parent"
+        android:id="@+id/infoHolder"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+            android:id="@+id/product_image"/>
+
+        <TextView
+            android:height="15dp"
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_gravity="center"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/share"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@mipmap/cart" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

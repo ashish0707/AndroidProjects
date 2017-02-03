@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ILoveZappos</string>
+    <string name="search">Search</string>
+    <string name="enter_product">search product</string>
+    <string name="welcome_to_zappos">Welcome to Zappos</string>
+    <string name="toolbarTitle">ILoveZappos</string>
+    <string name="quit_message" >Do you want to quit ?</string>
+    <string name="loading">loading...</string>
+    <string name="product_list">Product List</string>
+    <string name="share">share</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="failure_message">Cannot go to product page. Api not provided.</string>>
+</resources>
